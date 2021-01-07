@@ -1,9 +1,16 @@
+import sys
+
 def animal():
 	print('Please specify an animal')
 
+def dog():
+	print('This is the dog branch')
 
 def main():
-	animal()
+	if sys.argv[1] == 'dog':
+		dog()
+	else:
+		animal()
 
 if __name__ == '__main__':
 	main()
